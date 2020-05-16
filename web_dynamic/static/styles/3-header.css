@@ -22,6 +22,6 @@ header .logo {
 	display: inline-block;
 }
 
-#api_status .available {
-	background-color: #FF565F;
+#api_status.available {
+	background-color: #ff545f;
 }
