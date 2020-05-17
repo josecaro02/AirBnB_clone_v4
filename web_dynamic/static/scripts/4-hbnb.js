@@ -15,7 +15,7 @@ $(function () {
     }
   });
 
-  const urlStatus = 'http://127.0.0.1:5001/api/v1/status/';
+  const urlStatus = 'http://0.0.0.0:5001/api/v1/status/';
   $.get(urlStatus, function (data) {
     if (data.status === 'OK') {
       $('DIV#api_status').addClass('available');
@@ -24,7 +24,7 @@ $(function () {
     }
   });
 
-  const urlPlaces = 'http://127.0.0.1:5001/api/v1/places_search/';
+  const urlPlaces = 'http://0.0.0.0:5001/api/v1/places_search/';
   $.ajax({
     type: 'POST',
     url: urlPlaces,
@@ -80,6 +80,6 @@ $(function () {
     });
 
     $('section.filters button').click(function () {
-      
+
     });
 });
